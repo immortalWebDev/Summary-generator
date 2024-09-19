@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wikipedia Summary Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./images/wiki.png" />
+  </head>
+
+  <body
+    class="bg-lightgray min-h-screen flex flex-col items-center justify-center"
+  >
+    <div class="container">
+      <h1>Wikipedia Summary Generator</h1>
+      <p class="description">
+        Enter the topic you want a summary of and hit search.
+      </p>
+      <div class="input-group">
+        <input
+          type="text"
+          id="topic"
+          class="input-text"
+          placeholder="Enter Topic"
+        />
+      </div>
+      <div class="button-group">
+        <button id="searchButton" class="button search-button">Search</button>
+        <button id="clearButton" class="button clear-button">Clear</button>
+        <button id="downloadButton" class="button download-button hidden">
+          Download
+        </button>
+      </div>
+      <div id="summary" class="summary"></div>
+    </div>
+
+    <footer>
+      <p>Created with 💘 by Piyush</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
